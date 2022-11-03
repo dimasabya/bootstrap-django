@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark">
+        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="height: 30px;" src="{% static 'img/logo.png' %}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>{{heading}}</h1>
+        <p>{{subheading}}</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi nihil corporis aut est iure expedita dicta
+            eligendi odio ipsam, fugit, impedit porro repellendus mollitia rerum velit quas neque! Et, eius.</p>
+
+    </div>
+
+    <script src="{% static 'vendor/jquery/jquery.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/popper/popper.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascript"></script>
+</body>
+
+</html>
